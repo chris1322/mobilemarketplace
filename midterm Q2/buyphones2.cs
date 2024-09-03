@@ -16,25 +16,29 @@ namespace midterm_Q2
     {
         private Database db;
         private int userID = UserSession.CurrentUserID;
-       
 
-       
         public buyphones2()
         {
             InitializeComponent();
-            db = new Database(); 
+            db = new Database();
+            dataGridView1.CellContentClick += new DataGridViewCellEventHandler(dataGridView1_CellContentClick);
         }
 
         private void buyphones2_Load(object sender, EventArgs e)
         {
             PopulateDataGridView();
-            UpdateCartItemCount(); 
+            UpdateCartItemCount();
+            if (dataGridView1.Columns["select"] == null) // Check if the "select" column does not already exist
+            {
+                DataGridViewCheckBoxColumn selectColumn = new DataGridViewCheckBoxColumn();
+                selectColumn.Name = "select";
+                selectColumn.HeaderText = "Select";
+                selectColumn.Width = 50;
+                dataGridView1.Columns.Insert(0, selectColumn); // Insert as the first column
+            }
         }
 
         // Method to load and display phones in the DataGridView
-        
-
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string brand = cmbBrand.SelectedItem?.ToString();
@@ -48,40 +52,45 @@ namespace midterm_Q2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                int userID = UserSession.CurrentUserID;
-                int productID = Convert.ToInt32(selectedRow.Cells["PhoneID"].Value);
-                decimal price = Convert.ToDecimal(selectedRow.Cells["Price"].Value);
-                int quantity = 1;
-                MessageBox.Show("UserID being used: " + userID);
+                DataGridViewCheckBoxCell checkbox = (DataGridViewCheckBoxCell)row.Cells["select"];
 
-                string query = "INSERT INTO ShoppingCart (UserID, ProductID, Quantity, Price) VALUES (@UserID, @ProductID, @Quantity, @Price)";
+                if (checkbox.Value != null && (bool)checkbox.Value)
+                {
+                    int userID = UserSession.CurrentUserID;
+                    int productID = Convert.ToInt32(row.Cells["productId"].Value);
+                    decimal price = Convert.ToDecimal(row.Cells["Price"].Value);
+                    int quantity = 1;
 
-                SqlParameter[] parameters = new SqlParameter[]
-                {
-            new SqlParameter("@UserID", userID),
-            new SqlParameter("@ProductID", productID),
-            new SqlParameter("@Quantity", quantity),
-            new SqlParameter("@Price", price)
-                };
+                    string query = "INSERT INTO ShoppingCart (UserID, productId, Quantity, Price) VALUES (@UserID, @productId, @Quantity, @Price)";
 
-                try
-                {
-                    db.ExecuteNonQuery(query, parameters);
-                    MessageBox.Show("Product added to the cart successfully.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    SqlParameter[] parameters = new SqlParameter[]
+                    {
+                        new SqlParameter("@UserID", userID),
+                        new SqlParameter("@productId", productID),
+                        new SqlParameter("@Quantity", quantity),
+                        new SqlParameter("@Price", price)
+                    };
+
+                    try
+                    {
+                        db.ExecuteNonQuery(query, parameters);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.Message);
+                    }
                 }
             }
+
+            MessageBox.Show("Selected products added to the cart successfully.");
+            UpdateCartItemCount();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int userID = Session.CurrentUserID;
+            int userID = UserSession.CurrentUserID;
 
             string query = "DELETE FROM ShoppingCart WHERE UserID = @UserID";
 
@@ -93,10 +102,7 @@ namespace midterm_Q2
             try
             {
                 db.ExecuteNonQuery(query, parameters);  // Clear the shopping cart in the database
-
-                
-                UpdateCartItemCount();// Refresh the DataGridView to show an empty cart
-
+                UpdateCartItemCount(); // Refresh the DataGridView to show an empty cart
                 MessageBox.Show("Shopping cart cleared successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -108,7 +114,7 @@ namespace midterm_Q2
         // Method to load and display the shopping cart items in the DataGridView
         private void LoadShoppingCart()
         {
-            int userID = Session.CurrentUserID;
+            int userID = UserSession.CurrentUserID;
             string query = "SELECT * FROM ShoppingCart WHERE UserID = @UserID";
 
             SqlParameter[] parameters = new SqlParameter[]
@@ -120,14 +126,15 @@ namespace midterm_Q2
 
             dataGridView1.DataSource = cartData;  // Display shopping cart data
         }
+
         private int GetCartItemCount()
         {
-            int userID = Session.CurrentUserID;
+            int userID = UserSession.CurrentUserID;
             string query = "SELECT COUNT(*) FROM ShoppingCart WHERE UserID = @UserID";
 
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@UserID", userID)
+                new SqlParameter("@UserID", userID)
             };
 
             try
@@ -140,13 +147,14 @@ namespace midterm_Q2
                 MessageBox.Show("An error occurred while counting cart items: " + ex.Message);
                 return 0; // Return 0 in case of an error
             }
-
         }
+
         private void UpdateCartItemCount()
         {
             int itemCount = GetCartItemCount();
             lblcartitems.Text = $"Cart Items: {itemCount}";
         }
+
         private void PopulateDataGridView(string brand = null, string condition = null, decimal? maxPrice = null)
         {
             StringBuilder query = new StringBuilder("SELECT * FROM Phones1 WHERE 1 = 1");
@@ -207,14 +215,66 @@ namespace midterm_Q2
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProfileForm profileForm = new ProfileForm(UserSession.CurrentUserID);
-            profileForm.Show();
-            this.Hide();
+            
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridView1.Columns["select"].Index && e.RowIndex >= 0)
+            {
+                // Toggle the checkbox value safely
+                DataGridViewCheckBoxCell checkbox = (DataGridViewCheckBoxCell)dataGridView1.Rows[e.RowIndex].Cells["select"];
+                bool isChecked = (checkbox.Value == null ? false : (bool)checkbox.Value);
+                checkbox.Value = !isChecked;
+
+                // Select or deselect the entire row based on checkbox value
+                dataGridView1.Rows[e.RowIndex].Selected = !isChecked;
+            }
+        }
+
+        private void txtMaxPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCondition_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbBrand_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblcartitems_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnviewart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

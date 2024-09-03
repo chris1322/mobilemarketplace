@@ -29,7 +29,8 @@ namespace midterm_Q2
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            string query = "SELECT UserID, FirstName FROM Users WHERE Username = @Username AND Password = @Password";
+            // Query to retrieve the user's ID, FirstName, and Email based on their username and password
+            string query = "SELECT UserId, FirstName, Email FROM Users WHERE Username = @Username AND Password = @Password";
             SqlParameter[] parameters = new SqlParameter[]
             {
         new SqlParameter("@Username", username),
@@ -42,16 +43,18 @@ namespace midterm_Q2
 
                 if (userData.Rows.Count > 0)
                 {
+                    // Retrieving the UserID, FirstName, and Email from the query result
                     int userID = Convert.ToInt32(userData.Rows[0]["UserID"]);
                     string firstName = userData.Rows[0]["FirstName"].ToString();
+                    string email = userData.Rows[0]["Email"].ToString();
 
-                    // Set the session variables
+                    // Setting the session variables with the retrieved data
                     UserSession.CurrentUserID = userID;
                     UserSession.CurrentUserFirstName = firstName;
+                    UserSession.CurrentUserEmail = email;
 
-                    // Open the Home form
-                    Home homeForm = new Home();
-                    homeForm.Show();
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
                     this.Hide();
                 }
                 else

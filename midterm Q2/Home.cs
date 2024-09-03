@@ -24,6 +24,7 @@ namespace midterm_Q2
         public Home()
         {
             InitializeComponent();
+            this.Load += new EventHandler(Home_Load);
 
         }
 
@@ -31,26 +32,28 @@ namespace midterm_Q2
 
         private void Home_Load(object sender, EventArgs e)
         {
-             label1.Text = "Hello, " + UserSession.CurrentUserFirstName;
+            MessageBox.Show("Current User First Name: " + UserSession.CurrentUserFirstName);
+
+            label1.Text = "Hello, " + UserSession.CurrentUserFirstName;
         }
 
         private void buyPhonesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BuyPhonesForm buyPhonesForm = new BuyPhonesForm();
+            buyphones2 buyPhonesForm = new buyphones2();
             buyPhonesForm.Show();
             this.Hide();
         }
 
         private void sellPhonesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SellPhonesForm sellPhonesForm = new SellPhonesForm();
+            sellPhonesForm.Show();
+            this.Hide();
         }
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProfileForm profileForm = new ProfileForm(UserSession.CurrentUserID);
-            profileForm.Show();
-            this.Hide();
+         
 
         }
 

@@ -145,9 +145,7 @@ namespace midterm_Q2
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProfileForm profileForm = new ProfileForm(currentUserId);
-            profileForm.Show();
-            this.Hide();
+           
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)

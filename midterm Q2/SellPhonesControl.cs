@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace midterm_Q2
 {
-    public partial class Form1 : Form
+    public partial class SellPhonesControl : UserControl
     {
-        public Form1()
+        public SellPhonesControl()
         {
             InitializeComponent();
         }

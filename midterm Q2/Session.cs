@@ -10,5 +10,6 @@ namespace midterm_Q2
     {
         public static int CurrentUserID { get; set; }
         public static string CurrentUserFirstName { get; set; }
+        public static string CurrentUserEmail { get; set; }
     }
 }

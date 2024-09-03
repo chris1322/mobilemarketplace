@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,30 +55,30 @@
     <Compile Include="buyphones2.Designer.cs">
       <DependentUpon>buyphones2.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuyPhonesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyPhonesControl.Designer.cs">
+      <DependentUpon>BuyPhonesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuyPhonesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuyPhonesForm.Designer.cs">
       <DependentUpon>BuyPhonesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChangePasswordForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChangePasswordForm.Designer.cs">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Database.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeControl.Designer.cs">
+      <DependentUpon>HomeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -90,12 +91,6 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProfileForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProfileForm.Designer.cs">
-      <DependentUpon>ProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,20 +110,23 @@
     <EmbeddedResource Include="buyphones2.resx">
       <DependentUpon>buyphones2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuyPhonesControl.resx">
+      <DependentUpon>BuyPhonesControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyPhonesForm.resx">
       <DependentUpon>BuyPhonesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChangePasswordForm.resx">
-      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomeControl.resx">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProfileForm.resx">
-      <DependentUpon>ProfileForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -182,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FeaturedModels copy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Samsung Z Fold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
