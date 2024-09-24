@@ -7,20 +7,11 @@ namespace midterm_Q2
 {
     internal class Database
     {
-        private string query;
-        private DataTable data;
         private string connectionString;
 
         public Database()
         {
             connectionString = ConfigurationManager.ConnectionStrings["PhoneMarketplaceDB"].ConnectionString;
-
-            query = "SELECT * FROM phones1";
-
-            Console.WriteLine("Connection String: " + connectionString);
-            Console.WriteLine("Query: " + query);
-
-            data = ExecuteQuery(query);
         }
 
         public DataTable ExecuteQuery(string query, SqlParameter[] parameters = null)
@@ -28,7 +19,6 @@ namespace midterm_Q2
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     if (parameters != null)
@@ -53,7 +43,6 @@ namespace midterm_Q2
             }
         }
         
-
         public int ExecuteNonQuery(string query, SqlParameter[] parameters = null)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
