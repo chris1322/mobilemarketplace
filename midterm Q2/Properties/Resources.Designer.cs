@@ -63,9 +63,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _25_50_off {
+        internal static System.Drawing.Bitmap Android {
             get {
-                object obj = ResourceManager.GetObject("25-50 off", resourceCulture);
+                object obj = ResourceManager.GetObject("Android", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _25_50_off1 {
+        internal static System.Drawing.Bitmap Android1 {
             get {
-                object obj = ResourceManager.GetObject("25-50 off1", resourceCulture);
+                object obj = ResourceManager.GetObject("Android1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3dcs {
+        internal static System.Drawing.Bitmap Featured1 {
             get {
-                object obj = ResourceManager.GetObject("3dcs", resourceCulture);
+                object obj = ResourceManager.GetObject("Featured1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _3dcs1 {
+        internal static System.Drawing.Bitmap first {
             get {
-                object obj = ResourceManager.GetObject("3dcs1", resourceCulture);
+                object obj = ResourceManager.GetObject("first", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FeaturedModels_copy {
+        internal static System.Drawing.Bitmap first1 {
             get {
-                object obj = ResourceManager.GetObject("FeaturedModels copy", resourceCulture);
+                object obj = ResourceManager.GetObject("first1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FeaturedModels_copy1 {
+        internal static System.Drawing.Bitmap first2 {
             get {
-                object obj = ResourceManager.GetObject("FeaturedModels copy1", resourceCulture);
+                object obj = ResourceManager.GetObject("first2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FeaturedModels_copy2 {
+        internal static System.Drawing.Bitmap first3 {
             get {
-                object obj = ResourceManager.GetObject("FeaturedModels copy2", resourceCulture);
+                object obj = ResourceManager.GetObject("first3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,89 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap galaxy_s24_onyxblack_frontback1 {
+        internal static System.Drawing.Bitmap I_Phone {
             get {
-                object obj = ResourceManager.GetObject("galaxy_s24_onyxblack_frontback1", resourceCulture);
+                object obj = ResourceManager.GetObject("I-Phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ios {
+            get {
+                object obj = ResourceManager.GetObject("ios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_icon {
+            get {
+                object obj = ResourceManager.GetObject("logo icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OOpen_Folder_WF {
+            get {
+                object obj = ResourceManager.GetObject("OOpen Folder-WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Open_Folder_WF {
+            get {
+                object obj = ResourceManager.GetObject("Open Folder-WF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Photgraphs_colorthumbnail_ {
+            get {
+                object obj = ResourceManager.GetObject("Photgraphs(colorthumbnail)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Photgraphs_thumbnail_ {
+            get {
+                object obj = ResourceManager.GetObject("Photgraphs(thumbnail)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_5 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_6 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,36 +263,6 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Samsung_galaxy_s22_ultra3 {
-            get {
-                object obj = ResourceManager.GetObject("Samsung-galaxy-s22-ultra3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Samsung_Z_Fold {
-            get {
-                object obj = ResourceManager.GetObject("Samsung Z Fold", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap samsunga15 {
-            get {
-                object obj = ResourceManager.GetObject("samsunga15", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap samsunga151 {
             get {
                 object obj = ResourceManager.GetObject("samsunga151", resourceCulture);
@@ -223,9 +273,19 @@ namespace midterm_Q2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tech {
+        internal static System.Drawing.Bitmap top {
             get {
-                object obj = ResourceManager.GetObject("tech", resourceCulture);
+                object obj = ResourceManager.GetObject("top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Upload {
+            get {
+                object obj = ResourceManager.GetObject("Upload", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

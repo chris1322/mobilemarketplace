@@ -121,52 +121,70 @@
   <data name="Samsung-galaxy-s22-ultra2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Samsung-galaxy-s22-ultra2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FeaturedModels copy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FeaturedModels copy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Photgraphs(colorthumbnail)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Photgraphs(colorthumbnail).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Android1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Android1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Featured1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Featured1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="samsunga151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\samsunga151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="first2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="galaxy_s24_onyxblack_frontback" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\galaxy_s24_onyxblack_frontback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3dcs1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3dcs1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="first1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FeaturedModels copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FeaturedModels copy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Photgraphs(thumbnail)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Photgraphs(thumbnail).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FeaturedModels copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FeaturedModels copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="25-50 off1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\25-50 off1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Android" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Android.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="samsunga15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\samsunga15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tech" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tech.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Samsung-galaxy-s22-ultra3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Samsung-galaxy-s22-ultra3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Samsung-galaxy-s22-ultra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Samsung-galaxy-s22-ultra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rectangle 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open Folder-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open Folder-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I-Phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\I-Phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Samsung-galaxy-s22-ultra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Samsung-galaxy-s22-ultra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3dcs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3dcs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="galaxy_s24_onyxblack_frontback1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galaxy_s24_onyxblack_frontback1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="first3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\first3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="25-50 off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\25-50 off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Samsung Z Fold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Samsung Z Fold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OOpen Folder-WF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OOpen Folder-WF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

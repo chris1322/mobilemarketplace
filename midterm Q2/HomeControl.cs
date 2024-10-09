@@ -1,70 +1,70 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using midterm_Q2;
+using System;
 using System.Windows.Forms;
 
 namespace midterm_Q2
 {
     public partial class HomeControl : UserControl
     {
-        private string userId;
-        private MainForm parentForm;
+        // Inside HomeControl
+        private Panel mainPanel = new Panel();
 
-        public HomeControl(string userId)
+        public HomeControl()
         {
             InitializeComponent();
-            this.userId = userId;
+            // Add mainPanel to the HomeControl
+            this.Controls.Add(mainPanel); // Add the panel to the control/form
+
+            // Optionally configure the panel (set size, location, etc.)
+            mainPanel.Dock = DockStyle.Fill; // Dock it to fill the HomeControl
+
+            // Create and add PhoneListControl to the mainPanel
+            
+           
+
+
+
+
         }
+
+        private void buyPhonesViewAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Get the parent form (mainForm) and show the BuyPhonesControl
+            if (this.Parent is mainForm parentForm)
+            {
+                BuyPhonesControl buyPhonesControl = new BuyPhonesControl();
+                parentForm.ShowControl(buyPhonesControl);
+            }
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Get the parent form (mainForm) and show the SettingsUserControl
+            if (this.Parent is mainForm parentForm)
+            {
+                SettingsUserControl settingsControl = new SettingsUserControl();
+                parentForm.ShowControl(settingsControl);
+            }
+        }
+
+       
 
         private void HomeControl_Load(object sender, EventArgs e)
         {
-            parentForm = this.FindForm() as MainForm;
-
-            if (parentForm == null)
-            {
-                MessageBox.Show("Parent form not set correctly!");
-                return;
-            }
-
-            lblHello.Text = "Hello, " + UserSession.CurrentUserFirstName;
-            lblSubtitle.Text = "Explore the latest deals\r\nand\r\nfind your next phone!";
-
-            flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.FlowDirection = FlowDirection.LeftToRight;
-            flowLayoutPanel1.WrapContents = false;
-
-            foreach (Control control in flowLayoutPanel1.Controls)
-            {
-                if (control is Panel)
-                {
-                    control.Margin = new Padding(10);
-                }
-            }
-
-
+            // Optionally, show a default control on load if needed
         }
 
-        private void buyPhonesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void listAPhoneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Ensure that the parent form is set when the control is loaded
-            ShowControl(new BuyPhonesControl());
-        }
 
-        private void ShowControl(UserControl control)
-        {
-            if (parentForm != null)
-            {
-                parentForm.ShowControl(control);
-            }
-            else
-            {
-                MessageBox.Show("Parent form not set!");
-            }
+            mainForm parentForm = (mainForm)this.ParentForm;
+            Panel mainPanel = parentForm.GetMainPanel();  // This gets the mainPanel from mainForm
+            
+
+            // Create an instance of PhoneListControl
+            PhoneListControl phoneListControl = new PhoneListControl();
+            parentForm.ShowControl(phoneListControl);
+            
         }
     }
 }

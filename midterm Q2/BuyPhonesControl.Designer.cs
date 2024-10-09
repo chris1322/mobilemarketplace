@@ -34,23 +34,34 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buyPhonesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buyPhonesViewAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByBrandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.samsungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.appleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.huaweiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.motorolaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lenovoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xiaomiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByConditionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usedLikeNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.damagedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchByPriceRangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.upToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sellPhonesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lblcartitems = new System.Windows.Forms.Label();
-            this.btnviewart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtMaxPrice = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbCondition = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbBrand = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
+            this.listAPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sellersGuideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comboBoxBrand = new System.Windows.Forms.ComboBox();
+            this.comboBoxCondition = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,7 +71,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.profileToolStripMenuItem,
             this.logoutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(464, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(1064, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(116, 24);
@@ -89,7 +100,7 @@
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(700, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(1300, 24);
             this.menuStrip2.TabIndex = 10;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -98,189 +109,227 @@
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // buyPhonesToolStripMenuItem
             // 
+            this.buyPhonesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buyPhonesViewAllToolStripMenuItem,
+            this.searchByBrandToolStripMenuItem,
+            this.searchByConditionToolStripMenuItem,
+            this.searchByPriceRangeToolStripMenuItem});
             this.buyPhonesToolStripMenuItem.Name = "buyPhonesToolStripMenuItem";
             this.buyPhonesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.buyPhonesToolStripMenuItem.Text = "Buy Phones";
             // 
+            // buyPhonesViewAllToolStripMenuItem
+            // 
+            this.buyPhonesViewAllToolStripMenuItem.Name = "buyPhonesViewAllToolStripMenuItem";
+            this.buyPhonesViewAllToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.buyPhonesViewAllToolStripMenuItem.Text = "(View All";
+            // 
+            // searchByBrandToolStripMenuItem
+            // 
+            this.searchByBrandToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.samsungToolStripMenuItem,
+            this.appleToolStripMenuItem,
+            this.huaweiToolStripMenuItem,
+            this.motorolaToolStripMenuItem,
+            this.lenovoToolStripMenuItem,
+            this.xiaomiToolStripMenuItem,
+            this.vivoToolStripMenuItem});
+            this.searchByBrandToolStripMenuItem.Name = "searchByBrandToolStripMenuItem";
+            this.searchByBrandToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.searchByBrandToolStripMenuItem.Text = "Search By Brand:";
+            // 
+            // samsungToolStripMenuItem
+            // 
+            this.samsungToolStripMenuItem.Name = "samsungToolStripMenuItem";
+            this.samsungToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.samsungToolStripMenuItem.Text = "Samsung";
+            // 
+            // appleToolStripMenuItem
+            // 
+            this.appleToolStripMenuItem.Name = "appleToolStripMenuItem";
+            this.appleToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.appleToolStripMenuItem.Text = "Apple";
+            // 
+            // huaweiToolStripMenuItem
+            // 
+            this.huaweiToolStripMenuItem.Name = "huaweiToolStripMenuItem";
+            this.huaweiToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.huaweiToolStripMenuItem.Text = "Huawei";
+            // 
+            // motorolaToolStripMenuItem
+            // 
+            this.motorolaToolStripMenuItem.Name = "motorolaToolStripMenuItem";
+            this.motorolaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.motorolaToolStripMenuItem.Text = "Motorola";
+            // 
+            // lenovoToolStripMenuItem
+            // 
+            this.lenovoToolStripMenuItem.Name = "lenovoToolStripMenuItem";
+            this.lenovoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.lenovoToolStripMenuItem.Text = "Lenovo";
+            // 
+            // xiaomiToolStripMenuItem
+            // 
+            this.xiaomiToolStripMenuItem.Name = "xiaomiToolStripMenuItem";
+            this.xiaomiToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.xiaomiToolStripMenuItem.Text = "Xiaomi";
+            // 
+            // vivoToolStripMenuItem
+            // 
+            this.vivoToolStripMenuItem.Name = "vivoToolStripMenuItem";
+            this.vivoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.vivoToolStripMenuItem.Text = "Vivo";
+            // 
+            // searchByConditionToolStripMenuItem
+            // 
+            this.searchByConditionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.usedToolStripMenuItem,
+            this.usedLikeNewToolStripMenuItem,
+            this.damagedToolStripMenuItem});
+            this.searchByConditionToolStripMenuItem.Name = "searchByConditionToolStripMenuItem";
+            this.searchByConditionToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.searchByConditionToolStripMenuItem.Text = "Search By Condition:";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.newToolStripMenuItem.Text = "New";
+            // 
+            // usedToolStripMenuItem
+            // 
+            this.usedToolStripMenuItem.Name = "usedToolStripMenuItem";
+            this.usedToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.usedToolStripMenuItem.Text = "Used ";
+            // 
+            // usedLikeNewToolStripMenuItem
+            // 
+            this.usedLikeNewToolStripMenuItem.Name = "usedLikeNewToolStripMenuItem";
+            this.usedLikeNewToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.usedLikeNewToolStripMenuItem.Text = "Used (Like New)";
+            // 
+            // damagedToolStripMenuItem
+            // 
+            this.damagedToolStripMenuItem.Name = "damagedToolStripMenuItem";
+            this.damagedToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.damagedToolStripMenuItem.Text = "Damaged";
+            // 
+            // searchByPriceRangeToolStripMenuItem
+            // 
+            this.searchByPriceRangeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
+            this.upToolStripMenuItem});
+            this.searchByPriceRangeToolStripMenuItem.Name = "searchByPriceRangeToolStripMenuItem";
+            this.searchByPriceRangeToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.searchByPriceRangeToolStripMenuItem.Text = "Search By Price Range:";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(133, 22);
+            this.toolStripMenuItem2.Text = "$0 - $100";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
+            this.toolStripMenuItem3.Text = "$100 - $250";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(133, 22);
+            this.toolStripMenuItem4.Text = "$250 - $500";
+            // 
+            // upToolStripMenuItem
+            // 
+            this.upToolStripMenuItem.Name = "upToolStripMenuItem";
+            this.upToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.upToolStripMenuItem.Text = "$500 & Up";
+            // 
             // sellPhonesToolStripMenuItem
             // 
+            this.sellPhonesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listAPhoneToolStripMenuItem,
+            this.sellersGuideToolStripMenuItem});
             this.sellPhonesToolStripMenuItem.Name = "sellPhonesToolStripMenuItem";
             this.sellPhonesToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.sellPhonesToolStripMenuItem.Text = "Sell Phones";
             // 
-            // button2
+            // listAPhoneToolStripMenuItem
             // 
-            this.button2.Location = new System.Drawing.Point(610, 425);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 24);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Clear Cart";
-            this.button2.UseVisualStyleBackColor = true;
+            this.listAPhoneToolStripMenuItem.Name = "listAPhoneToolStripMenuItem";
+            this.listAPhoneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listAPhoneToolStripMenuItem.Text = "List a Phone";
+            this.listAPhoneToolStripMenuItem.Click += new System.EventHandler(this.listAPhoneToolStripMenuItem_Click);
             // 
-            // lblcartitems
+            // sellersGuideToolStripMenuItem
             // 
-            this.lblcartitems.AutoSize = true;
-            this.lblcartitems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcartitems.Location = new System.Drawing.Point(360, 429);
-            this.lblcartitems.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblcartitems.Name = "lblcartitems";
-            this.lblcartitems.Size = new System.Drawing.Size(98, 20);
-            this.lblcartitems.TabIndex = 32;
-            this.lblcartitems.Text = "Cart Items:";
+            this.sellersGuideToolStripMenuItem.Name = "sellersGuideToolStripMenuItem";
+            this.sellersGuideToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.sellersGuideToolStripMenuItem.Text = "Sellers Guide ";
             // 
-            // btnviewart
+            // comboBoxBrand
             // 
-            this.btnviewart.Location = new System.Drawing.Point(490, 425);
-            this.btnviewart.Margin = new System.Windows.Forms.Padding(2);
-            this.btnviewart.Name = "btnviewart";
-            this.btnviewart.Size = new System.Drawing.Size(94, 24);
-            this.btnviewart.TabIndex = 31;
-            this.btnviewart.Text = "View Cart";
-            this.btnviewart.UseVisualStyleBackColor = true;
+            this.comboBoxBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxBrand.FormattingEnabled = true;
+            this.comboBoxBrand.Location = new System.Drawing.Point(0, 123);
+            this.comboBoxBrand.Name = "comboBoxBrand";
+            this.comboBoxBrand.Size = new System.Drawing.Size(167, 21);
+            this.comboBoxBrand.TabIndex = 12;
             // 
-            // button1
+            // comboBoxCondition
             // 
-            this.button1.Location = new System.Drawing.Point(-2, 109);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 19);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Add To Cart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.comboBoxCondition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxCondition.FormattingEnabled = true;
+            this.comboBoxCondition.Location = new System.Drawing.Point(0, 289);
+            this.comboBoxCondition.Name = "comboBoxCondition";
+            this.comboBoxCondition.Size = new System.Drawing.Size(167, 21);
+            this.comboBoxCondition.TabIndex = 13;
             // 
-            // btnSearch
+            // label28
             // 
-            this.btnSearch.Location = new System.Drawing.Point(488, 74);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(56, 19);
-            this.btnSearch.TabIndex = 29;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(474, 24);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(275, 57);
+            this.label28.TabIndex = 25;
+            this.label28.Text = "Latest Uploads!";
             // 
-            // txtMaxPrice
+            // panel1
             // 
-            this.txtMaxPrice.Location = new System.Drawing.Point(391, 74);
-            this.txtMaxPrice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMaxPrice.Name = "txtMaxPrice";
-            this.txtMaxPrice.Size = new System.Drawing.Size(76, 20);
-            this.txtMaxPrice.TabIndex = 28;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(334, 74);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Max Price:";
-            // 
-            // cmbCondition
-            // 
-            this.cmbCondition.FormattingEnabled = true;
-            this.cmbCondition.Items.AddRange(new object[] {
-            "",
-            "New",
-            "Used (Like New)",
-            "Used",
-            "Damaged"});
-            this.cmbCondition.Location = new System.Drawing.Point(208, 74);
-            this.cmbCondition.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbCondition.Name = "cmbCondition";
-            this.cmbCondition.Size = new System.Drawing.Size(92, 21);
-            this.cmbCondition.TabIndex = 26;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(156, 74);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Condition:";
-            // 
-            // cmbBrand
-            // 
-            this.cmbBrand.FormattingEnabled = true;
-            this.cmbBrand.Items.AddRange(new object[] {
-            "",
-            "Samsung",
-            "Apple",
-            "Oneplus",
-            "Nokia"});
-            this.cmbBrand.Location = new System.Drawing.Point(44, 74);
-            this.cmbBrand.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbBrand.Name = "cmbBrand";
-            this.cmbBrand.Size = new System.Drawing.Size(92, 21);
-            this.cmbBrand.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-79, 58);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Brand:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-2, 133);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 265);
-            this.dataGridView1.TabIndex = 22;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(2, 74);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "Brand:";
+            this.panel1.Location = new System.Drawing.Point(292, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(701, 184);
+            this.panel1.TabIndex = 24;
             // 
             // BuyPhonesControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.lblcartitems);
-            this.Controls.Add(this.btnviewart);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtMaxPrice);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cmbCondition);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbBrand);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.AutoSize = true;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.comboBoxCondition);
+            this.Controls.Add(this.comboBoxBrand);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.Name = "BuyPhonesControl";
-            this.Size = new System.Drawing.Size(700, 500);
+            this.Size = new System.Drawing.Size(1300, 800);
             this.Load += new System.EventHandler(this.BuyPhonesControl_Load);
+            this.VisibleChanged += new System.EventHandler(this.BuyPhonesControl_VisibleChanged);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,19 +343,32 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buyPhonesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buyPhonesViewAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sellPhonesToolStripMenuItem;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lblcartitems;
-        private System.Windows.Forms.Button btnviewart;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtMaxPrice;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbCondition;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmbBrand;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem listAPhoneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sellersGuideToolStripMenuItem;
+        private System.Windows.Forms.Panel filterPanel;
+        private System.Windows.Forms.ComboBox comboBoxBrand;
+        private System.Windows.Forms.ComboBox comboBoxCondition;
+        private System.Windows.Forms.ToolStripMenuItem searchByBrandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem samsungToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem appleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem huaweiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem motorolaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lenovoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xiaomiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchByConditionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchByPriceRangeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usedLikeNewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem damagedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem upToolStripMenuItem;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Panel panel1;
     }
 }

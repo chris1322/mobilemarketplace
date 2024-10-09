@@ -1,41 +1,41 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using System.Windows.Forms;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace midterm_Q2
 {
-    public partial class MainForm: Form
+    public partial class mainForm : Form
     {
-        public MainForm()
+        public Panel GetMainPanel()
         {
+            return mainPanel;
+        }
 
+        public mainForm()
+        {
             InitializeComponent();
+            Load += mainForm_Load;
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void mainForm_Load(object sender, EventArgs e)
         {
-            var homeControl = new HomeControl(UserSession.CurrentUserID.ToString());
+            // Instantiate HomeControl
+            HomeControl homeControl = new HomeControl();
+
+            // Display HomeControl in mainPanel
             ShowControl(homeControl);
-            
         }
 
-        public void ShowControl(UserControl control)
+        public void ShowControl(Control control)
         {
-            panel1.Controls.Clear(); 
+            // Ensure you clear any existing controls first
+            mainPanel.Controls.Clear();
             control.Dock = DockStyle.Fill;
-            panel1.Controls.Add(control);  
+            mainPanel.Controls.Add(control);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
         {
-
+            // No custom painting is needed here unless required for UI elements
         }
     }
 }
